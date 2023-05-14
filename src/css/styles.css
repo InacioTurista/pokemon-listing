@@ -23,7 +23,7 @@ header .button-image {
   transition: 0.2s ease-in-out;
 }
 
-header #button-theme-changer {
+header #theme-changer-button {
   background: none;
   border: none;
 }
@@ -33,6 +33,10 @@ header .button-image:hover,
 main .pokemon-card:hover {
   transform: scale(1.08);
   cursor: pointer;
+}
+
+main .pokemon-card:hover {
+  box-shadow: 3px 3px;
 }
 
 main {
@@ -116,7 +120,7 @@ main .type {
 
 main .description {
   max-height: 80px;
-  overflow-y: hidden;
+  overflow-y: scroll;
   font-size: 14px;
   padding-right: 8px;
 }
